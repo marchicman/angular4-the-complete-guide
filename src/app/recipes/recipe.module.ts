@@ -7,6 +7,8 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.component';
 import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
+import { SharedModule } from '../shared/shared.module';
+
 // import { RecipeService } from './recipe.service';
 
 const childRoutes: Route[] = [
@@ -29,6 +31,7 @@ const childRoutes: Route[] = [
     ],
     imports: [
         CommonModule,
+        SharedModule,
         RouterModule.forChild(childRoutes)
     ]// ,
     // providers: [RecipeService] spostato nel componente recipes.component.ts

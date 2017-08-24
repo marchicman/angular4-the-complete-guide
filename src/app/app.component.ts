@@ -5,11 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent {}
 
-  menuItem = 'recipes';
-
-  onMenuClicked(menuItem) {
-    this.menuItem = menuItem;
-  }
-}

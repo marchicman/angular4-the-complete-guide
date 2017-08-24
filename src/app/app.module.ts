@@ -13,8 +13,9 @@ import {HeaderComponent} from './header/header.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import {DropdownDirective} from './shared/dropdown.directive';
+// import {DropdownDirective} from './shared/dropdown.directive';
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
 // import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 @NgModule({
@@ -26,13 +27,14 @@ import { AppRoutingModule } from './app-routing.module';
     // RecipeDetailComponent,
     // RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent,
-    DropdownDirective
+    ShoppingEditComponent // ,
+    // DropdownDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [ShoppingListService],
